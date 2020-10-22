@@ -12,14 +12,14 @@ angular.module('LunchChecker', [])
 
 };
    function check(string){
-      var words=string.split(",");
- 
-      if(words.length>1&&words.length<=4)
-        return "Enjoy";
-      else if(words.length<=1)
-        return "Please Enter data";
-      else 
-        return "Too much";
+       if(string === "")
+        return "Please enter data first";
+       var words=string.split(",");
+       console.log(words.length)
+        if(words.length>=1&&words.length<=3)
+          return "Enjoy";
+        else 
+          return "Too much";
 }
     
 });
