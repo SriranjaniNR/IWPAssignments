@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The World of Fruit</title>
+<style>
+    .box{
+        width:500px;
+        background-color:gray;
+        margin: 20px;
+        border: 5px black;
+        padding: 10px;
+    }
+    .block{
+      display: inline-block;
+     text-align: right;
+    width:170px;
+    padding:10px;
+    
+    }
+   input {
+   display: inline-block;
+   }
+   .scroll{
+width:170px;
+padding:10px;
+height: 10px;
+display:inline-block;
+
+}
+.head{
+  text-align: left;
+}
+</style>
+</head>
+<body>
+   <h3>Fruit Survey</h3>
+   <div class="box">
+    <form>
+      <div class="container">
+      <label class="block" for="name">Name    </label>
+      <input type="text" id="name" name=" name">
+    </div>
+    <div class="container">
+      <label class="block" for="address">Address </label>
+      <input type="text" id="address" name=" address">
+    </div> 
+    <div class="container">
+        <label class="block"for="email">Email </label>
+        <input type="text" id="email" name=" email">
+      </div> 
+    <div class="container">
+      <label class="block" for="question">How many pieces of fruit do you eat per day </label>
+      <input type="radio" id="0" name="0">
+      <label for="0">0</label>
+     <div>
+        <a class="block"></a>
+        <input type="radio" id="0" name="0">
+        <label for="0">1</label>
+      </div>
+      <div>
+        <a class="block"></a>
+        <input type="radio" id="0" name="0">
+        <label for="0">2</label>
+      </div>
+      <div>
+        <a class="block"></a>
+        <input type="radio" id="0" name="0">
+        <label for="0">More than 2</label>
+      </div>
+      <div >
+        <label class="block" for="fav">My Favourite fruit </label>
+        <span class=scroll>
+        <select  size="3" class="form-control" id="fav" name="fav">
+          <option value="Apple">Apple</option>
+          <option value="Banana">Banana</option>
+          <option value="Grapes">Grapes</option>
+          <option value="Pomegranate">Pomegranate</option>
+        </select>
+      </span>
+      </div>
+      <div>
+        <label class="block"for="bro">Would you like brochure? </label>
+        <input type="checkbox" id="bro" name="bro">
+      </div> 
+        
+    </div> 
+      
+     
+    </form>
+</div> 
+</body>
+</html>
